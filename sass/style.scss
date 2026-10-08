@@ -1,0 +1,86 @@
+@import 'color';
+@import'space';
+@import 'mixins';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fonts;
+}
+nav{
+    background-color: $bg-primary;
+    box-shadow: $shadow;
+}
+header {
+    background-color: $bg-primary;
+    padding: $p-5;
+
+    h1 {
+        color: $text-white;
+        text-align: center;
+    }
+     h2 {
+        padding: $p-5;
+        color: $text-white;
+        text-align: center;
+    }
+    a{
+       @include button; 
+    }
+    
+    
+}
+main{
+   h2 {
+        padding: $p-5;
+        color: $text-dark;
+        text-align: start;
+        margin: $mb-2;
+    }  
+    p{
+        
+       padding-left: $p-5;
+        color: $text-dark;
+        text-align: start;
+    }
+   img{
+    padding: $p-5;
+   }
+   #cup{
+    background-color: $bg-gray;
+   }
+}
+.qty{
+    display: block;
+background-color: $bg-dark;
+color: $text-white;
+text-align: center;
+padding:$p-5;
+background-color: $bg-secondry;
+}
+footer{
+      
+      #icons{
+        background-color: $bg-gray;
+      padding:$p-5;
+      text-align: center;
+      :hover{
+        color: $bg-secondry;
+      }
+      }
+      p{
+        padding:$p-5;
+        margin-top: $mt-2;
+      }
+
+
+}
+@media  (max-width:600px) {
+    img{
+        display:flex;
+        width: 100%;
+    }
+
+        
+    
+}
